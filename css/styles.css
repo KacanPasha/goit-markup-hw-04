@@ -79,7 +79,8 @@ body {
 .btn-port:hover,
 .btn-port:focus {
   border: 1px solid transparent;
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .control-btn:hover {
   color: var(--white);
@@ -92,25 +93,28 @@ body {
 ul {
   padding-left: 0;
 }
+.gallery-hover:hover,
+.gallery-hover:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 /**
   |============================
   | heder
   |============================
 */
-.heder .heder-flex {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: var(--navy-blue);
 
-}
-.heder{
-  border-bottom: 1px solid var(--cornflower);
-  
+
+.heder {
+ display: block;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
  
 }
-
+.heder-flex {
+display: flex;
+}
 .heder-nav {
   display: flex;
   align-items: center;
@@ -123,7 +127,6 @@ ul {
 }
 .heder-logo {
   color: var(--iris);
-  
 
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -134,32 +137,21 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 76px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .heder-logo-color {
   color: var(--navy-blue);
-  
-  font-size: 18px;
-  font-family: "Raleway";
-  font-weight: 800;
-  font-style: normal;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  text-transform: uppercase;
-  
-}
-.heder-logo{
-  display: inline-block;
 
+}
+.heder-logo {
+  display: inline-block;
 }
 .heder-list {
   display: flex;
   gap: 40px;
   margin-bottom: 24px;
   margin-top: 24px;
- 
 }
-
 
 .heder-link {
   padding-top: 24px;
@@ -173,17 +165,15 @@ ul {
   color: var(--navy-blue);
 }
 .heder-nav-contakt {
+ 
   margin-left: auto;
 }
 
 .heder-contakt-lisk {
   display: flex;
   align-items: center;
-  gap: 40px
+  gap: 40px;
 }
-
-
-
 
 .heder-contakt-linc {
   font-style: normal;
@@ -199,15 +189,28 @@ ul {
   | hero
   |============================
 */
+.hero-background {
+  max-width: 1440px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .hero {
   display: block;
-  background-color: var(--navy-blue);
   color: var(--white);
-  padding: 188px 0 
+  padding: 188px 0;
 }
 
 .nero-title {
- 
   margin: auto;
   max-width: 496px;
   font-size: 56px;
@@ -218,13 +221,12 @@ ul {
   text-transform: none;
   text-align: center;
   padding-bottom: 48px;
-
 }
 
 .nero-btn {
   display: block;
   color: #ffffff;
-  background-color:var(--iris);
+  background-color: var(--iris);
   min-width: 169px;
 
   font-family: "Roboto", sans-serif;
@@ -242,9 +244,10 @@ ul {
   padding: 0 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .botton-padding {
-
 }
 /**
   |============================
@@ -252,7 +255,7 @@ ul {
   |============================
 */
 .feature {
-  padding: 120px 0 
+  padding: 120px 0;
 }
 
 .feature-lisk {
@@ -269,7 +272,7 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.feature-item{
+.feature-item {
   width: calc((100% - 72px) / 4);
 }
 .feature-text {
@@ -305,7 +308,6 @@ ul {
 .blok-photo-lisk {
   display: flex;
   gap: 24px;
-
 }
 
 /**
@@ -325,7 +327,7 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  
+
   margin-bottom: 72px;
 
   color: var(--grey);
@@ -335,12 +337,14 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 24px;
- 
+
   margin: 0;
 }
 .team-section-item {
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-section-name {
@@ -350,22 +354,35 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--grey);
-  
- 
-  margin-bottom: 8px
-  
+
+  margin-bottom: 8px;
 }
 .team-section-text {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
- 
-  text-align: center;
-  
-}
-.cont-name{
-  padding: 32px 16px;
 
+  text-align: center;
+}
+.cont-name {
+  padding: 32px 16px;
+}
+/**
+  |============================
+  | Customers
+  |============================
+*/
+.customers-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--grey);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 /**
@@ -373,15 +390,16 @@ ul {
   | footer
   |============================
 */
+.footer-list {
+  display: flex;
+}
 .footer {
- 
   background-color: var(--navy-blue);
   color: var(--cloud);
-  padding: 100px 0 
+  padding: 100px 0;
 }
 
 .footer-logo {
-
   color: var(--iris);
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -392,9 +410,7 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 16px
-
-
+  margin-bottom: 16px;
 }
 .footer-logo-color {
   color: var(--cloud);
@@ -411,7 +427,19 @@ ul {
   display: block;
   width: 264px;
   padding-top: 8px;
-  
+}
+.tfooter-social {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.tfooter-social-blok {
+  padding-left: 120px;
+}
+.tfooter-social-list {
+  display: flex;
 }
 
 /**
@@ -438,7 +466,6 @@ ul {
   color: var(--navy-blue-modal);
   background-color: var(--white);
   padding: 96px 0 120px;
- 
 }
 .gallery-title {
   font-size: 36px;
@@ -472,7 +499,7 @@ ul {
   color: var(--iris);
   background-color: var(--cloud);
 }
-.cont-link{
+.cont-link {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
@@ -498,7 +525,6 @@ ul {
 }
 
 .gallery-item-title {
-
   margin-bottom: 8px;
 
   font-weight: 500;
@@ -509,8 +535,6 @@ ul {
   color: var(--grey);
 }
 .gallery-item-text {
- 
-  
   line-height: 1.5;
   letter-spacing: 0.02em;
 
