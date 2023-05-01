@@ -454,8 +454,8 @@ ul {
   align-items: center;
   justify-content: center;
 
-  width: 168px;
-  height: 88px;
+  width: 167px;
+  height: 86px;
   padding: 16px 32px;
 
   fill: var(--light-slate);
@@ -472,15 +472,15 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
 }
 
 .customers-socials-item {
-  border: solid var(--light-slate);
-  border-radius: 4%;
+  border: solid 1px var(--light-slate);
+  border-radius: 4px;
 }
 .customers-socials-item:hover {
-  border: solid var(--ocean);
+  border: solid 1px var(--ocean);
 }
 
 /**
