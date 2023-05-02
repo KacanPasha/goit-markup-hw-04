@@ -418,7 +418,7 @@ ul {
   margin-bottom: 8px;
 }
 .cont-name {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 /**
   |============================
@@ -426,15 +426,17 @@ ul {
   |============================
 */
 .customers-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .customers-title {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   color: var(--grey);
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-top: 120px;
+
   margin-bottom: 72px;
 }
 .customers-svg {
@@ -454,9 +456,14 @@ ul {
   align-items: center;
   justify-content: center;
 
-  width: 167px;
-  height: 86px;
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
   padding: 16px 32px;
+
+  color: var(--light-slate);
 
   fill: var(--light-slate);
   border: var(--light-slate);
@@ -466,6 +473,11 @@ ul {
 }
 .customers-socials-link:hover {
   color: var(--ocean);
+  border-color: var(--ocean);
+}
+.customers-socials-link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
 }
 
 .customers-socials {
@@ -474,10 +486,13 @@ ul {
   justify-content: center;
   gap: 24px;
 }
+.customers-socials-icon{
+  fill: currentColor;
+}
 
 .customers-socials-item {
   border: solid 1px var(--light-slate);
-  border-radius: 4px;
+  
 }
 .customers-socials-item:hover {
   border: solid 1px var(--ocean);
@@ -490,11 +505,16 @@ ul {
 */
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 .footer {
   background-color: var(--navy-blue);
   color: var(--cloud);
   padding: 100px 0;
+}
+.footer-cont-logo {
+  margin-right: 120px;
+
 }
 
 .footer-logo {
@@ -531,7 +551,10 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
 }
 .tfooter-social-blok {
   padding-left: 120px;
@@ -566,7 +589,7 @@ ul {
   height: 16px;
 
   background-color: var(--iris);
-  fill: var(--white);
+  fill: var(--cloud);
 }
 .tfooter-socials-link:hover .tfooter-socials-icon {
   background-color: var(--grеen);
@@ -633,6 +656,7 @@ ul {
   background-color: var(--cloud);
 }
 .cont-link {
+  display: block;
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
