@@ -425,9 +425,13 @@ ul {
   | Customers
   |============================
 */
-.customers-container {
+
+.customers{
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.customers-container {
+
 }
 .customers-title {
   font-size: 36px;
@@ -443,6 +447,7 @@ ul {
   margin-bottom: 120px;
 }
 .customers-socials {
+  
   margin-bottom: 120px;
 }
 
@@ -458,6 +463,7 @@ ul {
 
   width: 100%;
   height: 100%;
+
 
   border: 1px solid var(--light-slate);
   border-radius: 4px;
@@ -488,10 +494,13 @@ ul {
 }
 .customers-socials-icon{
   fill: currentColor;
+  fill: var(--cloud);
 }
 
 .customers-socials-item {
   border: solid 1px var(--light-slate);
+  width: calc((100% - 120px) / 6);
+  height: 88px;
   
 }
 .customers-socials-item:hover {
@@ -587,8 +596,8 @@ ul {
   justify-content: center;
  
 
-  width: 24px;
-  height: 24px;
+  width: 24;
+  height: 24;
 
   background-color: var(--iris);
   fill: var(--cloud);
@@ -670,7 +679,8 @@ ul {
   gap: 24px;
   row-gap: 48px;
 }
-.gallery-lint {
+.gallery-link {
+  display: block; 
   cursor: pointer;
 
   font-family: "Roboto", sans-serif;
