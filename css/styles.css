@@ -470,14 +470,12 @@ ul {
   width: 100%;
   height: 100%;
 
-  border: 1px solid var(--light-slate);
+  border: solid 1px var(--light-slate);
   border-radius: 4px;
   padding: 16px 32px;
 
   color: var(--light-slate);
-
   fill: var(--light-slate);
-  border: var(--light-slate);
 }
 .customers-socials-link:hover .customers-socials-icon {
   fill: var(--ocean);
@@ -501,12 +499,9 @@ ul {
 }
 
 .customers-socials-item {
-  border: solid 1px var(--light-slate);
   width: calc((100% - 120px) / 6);
-  height: 88px;
-  
 }
-.customers-socials-item:hover {
+.customers-socials-link:hover {
   border: solid 1px var(--ocean);
 }
 
