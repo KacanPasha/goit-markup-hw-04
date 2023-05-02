@@ -116,6 +116,7 @@ ul {
 
   background-color: var(--iris);
   color: var(--white);
+  fill: var(--cloud);
 }
 
 .socials-link {
@@ -131,7 +132,7 @@ ul {
 .socials-link:hover .socials-icon {
   background-color: var(--ocean);
 }
-.socials-link:hover {
+.socials-link:focus {
   background-color: var(--ocean);
 }
 
@@ -477,6 +478,11 @@ ul {
 .customers-socials-link:hover .customers-socials-icon {
   fill: var(--ocean);
 }
+.customers-socials-link:focus .customers-socials-icon {
+  fill: var(--ocean);
+  background-color: var(--ocean);
+}
+
 .customers-socials-link:hover {
   color: var(--ocean);
   border-color: var(--ocean);
@@ -494,7 +500,7 @@ ul {
 }
 .customers-socials-icon{
   fill: currentColor;
-  fill: var(--cloud);
+ 
 }
 
 .customers-socials-item {
@@ -603,7 +609,7 @@ ul {
   fill: var(--cloud);
 }
 .tfooter-socials-link:hover .tfooter-socials-icon {
-  background-color: var(--grеen);
+  background-color: var(--grеen)
 }
 .tfooter-socials-link:focus {
   background-color: var(--grеen);
